@@ -18,21 +18,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="134" id="6zh-ez-1aU">
-                                <rect key="frame" x="0.0" y="28" width="414" height="134"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieListCell" rowHeight="150" id="6zh-ez-1aU" customClass="MovieTableViewCell" customModule="MultipleMVCLessonRepo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6zh-ez-1aU" id="u0L-yT-NuZ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="133.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="149.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Acm-ZK-Yn2">
-                                            <rect key="frame" x="38" y="26" width="120" height="21"/>
+                                            <rect key="frame" x="38" y="42" width="120" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oU-XI-MtU">
-                                            <rect key="frame" x="38" y="81" width="120" height="21"/>
+                                            <rect key="frame" x="38" y="97" width="120" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -56,6 +56,11 @@
                                         <constraint firstItem="2oU-XI-MtU" firstAttribute="trailing" secondItem="Acm-ZK-Yn2" secondAttribute="trailing" id="pMT-sg-QRH"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="movieGenre" destination="2oU-XI-MtU" id="1Sm-V6-XHo"/>
+                                    <outlet property="movieImage" destination="Odu-4h-Qn3" id="n5e-hs-7wj"/>
+                                    <outlet property="movieName" destination="Acm-ZK-Yn2" id="pbh-ZP-isD"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
